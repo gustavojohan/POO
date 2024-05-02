@@ -14,7 +14,7 @@ class Livro{
     
 
 public:
-    Livro(const std::string& n, int nP, Autor* );
+    Livro(const std::string& t, int nP);
     ~Livro();
 
     void set_titulo(const std::string& t);
@@ -24,6 +24,8 @@ public:
     int get_num_paginas();
 
     std::vector<Autor*> get_autores();
+    Livro& operator+(Autor* autor);
+    Livro& operator-(Autor* autor);
 
 
 };
