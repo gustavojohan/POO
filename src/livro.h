@@ -26,6 +26,8 @@ public:
     std::vector<Autor*> get_autores();
     Livro& operator+(Autor* autor);
     Livro& operator-(Autor* autor);
+    
+    virtual void print_info() const = 0;
 
 
 };

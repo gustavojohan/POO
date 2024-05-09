@@ -36,3 +36,6 @@ Livro& Livro::operator-(Autor* autor){ // operador para remover autores
     }
     return *this;
 }
+
+void Livro::print_info() const{
+}
